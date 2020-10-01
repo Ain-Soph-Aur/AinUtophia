@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <title>Ain Utophia</title>
+    <link rel="stylesheet" id="ainutophia-css" href="./src/au-core.css" type="text/css" media="all">
+  </head>
+  <body class="loading">
+    <div id="loading">
+      <div class="logo">
+        <img src="./assets/logo.svg" />
+      </div>
+      <div id="loading-status">Loading...</div>
+    </div>
+
+    <div id="title" class="title">
+      <div id="title-text">Ain Utophia</div>
+      <div class="drag"></div>
+      <ul class="buttons">
+        <li><a onclick="ctclk('control','minimize')" class="button title blue"></a></li>
+        <li><a onclick="ctclk('control','close')" class="button title pink"></a></li>
+      </ul>
+    </div>
+
+    <div id="home" class="page active">
+      <h2 class="page-title">
+        <div class="title-img"><img src="./assets/icons/cloud-download-alt.svg" /></div>
+        <div class="title-text">资源下载情况<span id="current-server-name">找不到服务器欸…</span></div>
+      </h2>
+
+      <ul class="buttons">
+        <li><a onclick="ctclk('nav','home|settings')" class="button control"><img src="./assets/icons/cog.svg"></a></li>
+        <li><a onclick="ctclk('nav','home|info')" class="button control"><img src="./assets/icons/info.svg"></a></li>
+        <li><a onclick="ctclk('contron','sync')" class="button control"><img src="./assets/icons/sync-alt.svg"></a></li>
+        <li><a onclick="ctclk('control','start')" class="button control special"><img src="./assets/icons/play.svg"></a></li>
+      </ul>
+
+      <ul id="file-list" class="file-list">
+        <li class="mod">
+          <div class="file-name">Mod文件 1</div>
+          <div class="file-type">Mod</div>
+          <div class="progress-bar wrapper">
+            <div class="bar" style="width: 20%"></div>
+          </div>
+        </li>
+        <li class="mod">
+          <div class="file-name">Mod文件 2</div>
+          <div class="file-type">Mod</div>
+          <div class="progress-bar wrapper">
+            <div class="bar" style="width: 20%"></div>
+          </div>
+        </li>
+        <li class="config">
+          <div class="file-name">配置文件</div>
+          <div class="file-type">Config</div>
+          <div class="progress-bar wrapper">
+            <div class="bar" style="width: 100%"></div>
+          </div>
+        </li>
+        <li class="map">
+          <div class="file-name">地图文件</div>
+          <div class="file-type">Map</div>
+          <div class="progress-bar wrapper">
+            <div class="bar" style="width: 40%"></div>
+          </div>
+        </li>
+        <li class="server-data">
+          <div class="file-name">服务器地址</div>
+          <div class="file-type">Server</div>
+          <div class="progress-bar wrapper">
+            <div class="bar" style="width: 80%"></div>
+          </div>
+        </li>
+        <li class="other">
+          <div class="file-name">其他</div>
+          <div class="file-type">Other</div>
+          <div class="progress-bar wrapper">
+            <div class="bar" style="width: 60%"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="settings" class="page hidden">
+      <h2 class="page-title">
+        <div class="title-img"><img src="./assets/icons/server.svg" /></div>
+        <div class="title-text">服务器列表</div>
+      </h2>
+      <ul class="buttons">
+        <li><a onclick="ctclk('nav','settings|home')" class="button control"><img src="./assets/icons/chevron-left.svg"></a></li>
+        <li><a onclick="ctclk('settings','rm')" class="button control"><img src="./assets/icons/trash-alt.svg"></a></li>
+        <li><a onclick="ctclk('settings','sync')" class="button control"><img src="./assets/icons/sync-alt.svg"></a></li>
+        <li><a onclick="ctclk('settings','confirm')" class="button control special"><img src="./assets/icons/check.svg"></a></li>
+      </ul>
+      <ul id="servers-list" class="servers">
+        <li>
+          <a class="server-instance active">
+            <div class="server-logo"><img src="https://aka.ms/no" alt="Server Logo" /></div>
+            <div class="server-name">ServerName α</div>
+          </a>
+        </li>
+        <li>
+          <a class="server-instance">
+            <div class="server-logo"><img src="https://aka.ms/no" alt="Server Logo" /></div>
+            <div class="server-name">ServerName βββββββββββββββββββ</div>
+          </a>
+        </li>
+        <li>
+          <a class="server-instance add-more">
+            <div class="server-logo"><img src="./assets/icons/plus.svg" class="server-logo add-more" alt="Add More" /></div>
+            <div class="server-name">发现更多~</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="info" class="page hidden">
+      <h2 class="page-title">
+        <div class="title-img"><img src="./assets/icons/paper-plane.svg" /></div>
+        <div class="title-text">关于我们</div>
+      </h2>
+      <ul class="buttons">
+        <li><a onclick="ctclk('nav','info|home')" class="button control"><img src="./assets/icons/chevron-left.svg"></a></li>
+        <li><a onclick="ctclk('info','sponsor')" class="button control special"><img src="./assets/icons/dollar-sign.svg"></a></li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="./src/au-core.js"></script>
+  </body>
+</html>

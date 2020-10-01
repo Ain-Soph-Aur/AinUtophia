@@ -1,0 +1,21 @@
+{
+  "name": "ain-utophia",
+  "version": "1.0.0",
+  "description": "A brand-new Minecraft Manager & Launcher written in electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/Ain-Soph-Aur/AinUtophia",
+  "keywords": [
+    "Electron",
+    "Minecraft",
+    "Manager",
+    "Launcher"
+  ],
+  "author": "NyaCandy",
+  "license": "GPLv3.0",
+  "devDependencies": {
+    "electron": "^9.0.2"
+  }
+}
